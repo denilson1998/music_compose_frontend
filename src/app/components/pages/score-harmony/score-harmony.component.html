@@ -1,0 +1,13 @@
+<h2 class="text-2xl font-bold mb-4">Sugerencia de Armonía (IA)</h2>
+
+<textarea [(ngModel)]="inputXml" rows="10"
+          class="w-full border p-2 font-mono rounded mb-4"
+          placeholder="Pega aquí tu melodía en MusicXML"></textarea>
+
+<button (click)="generateHarmony()" class="bg-blue-600 text-white px-4 py-2 rounded">Generar armonía</button>
+
+<div *ngIf="harmonyXml" class="mt-6">
+  <h3 class="font-bold">Resultado:</h3>
+  <pre class="bg-gray-100 p-4 mt-2 overflow-auto text-sm">{{ harmonyXml }}</pre>
+</div>
+
