@@ -32,7 +32,7 @@ export class AiService {
     const formData = new FormData();
     formData.append('audio', audioBlob, 'audio.webm');
 
-    return this.http.post('http://localhost:7213/api/AI/transcribe/audio', formData);
+    return this.http.post('https://localhost:7213/api/AI/transcribe/audio', formData);
   }
 
 }
